@@ -1,7 +1,7 @@
-
 import React from 'react';
 import Hero from './components/Hero';
 import InfoSection from './components/InfoSection';
+import EventsSection from './components/EventsSection';
 import { WORKSHOP_CONTENT } from './constants';
 
 const App: React.FC = () => {
@@ -10,11 +10,12 @@ const App: React.FC = () => {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="font-oswald text-xl tracking-widest text-blue-300">
+          <div className="font-oswald text-xl tracking-widest text-blue-300 uppercase">
             VIDEOGIOCHI?
           </div>
           <div className="hidden md:flex items-center space-x-8 text-xs font-bold uppercase tracking-widest text-zinc-400">
             <a href="#about" className="hover:text-white transition-colors">Chi Siamo</a>
+            <a href="#events" className="hover:text-white transition-colors">Eventi</a>
             <a href="#join" className="bg-white text-black px-6 py-2 rounded-full hover:bg-blue-300 transition-all">Partecipa</a>
           </div>
         </div>
@@ -27,6 +28,8 @@ const App: React.FC = () => {
         <div id="about">
           <InfoSection />
         </div>
+
+        <EventsSection />
 
         {/* Footer CTA */}
         <section id="join" className="py-32 px-4 text-center bg-gradient-to-b from-transparent to-zinc-950">

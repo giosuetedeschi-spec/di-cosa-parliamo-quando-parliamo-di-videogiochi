@@ -13,6 +13,21 @@ export const WORKSHOP_CONTENT = {
   ]
 };
 
+export const WORKSHOP_EVENTS = [
+  {
+    name: "Sinfonie sintetiche: la filosofia della musica nei videogiochi",
+    date: "25 Febbraio 2025",
+    location: "Aula Magna, Edificio Centrale",
+    times: "16:00 - 18:30"
+  },
+  {
+    name: "Tra lenti e pixel: il cinema incontra il videogioco",
+    date: "12 Marzo 2025",
+    location: "Laboratorio Multimediale, Blocco B",
+    times: "15:00 - 17:30"
+  }
+];
+
 export const BRAND_COLORS = {
   primary: "#A7C7E7",
   background: "#0A0A0A",
