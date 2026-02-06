@@ -2,7 +2,6 @@
 import React from 'react';
 import Hero from './components/Hero';
 import InfoSection from './components/InfoSection';
-import ConceptGenerator from './components/ConceptGenerator';
 import { WORKSHOP_CONTENT } from './constants';
 
 const App: React.FC = () => {
@@ -16,7 +15,6 @@ const App: React.FC = () => {
           </div>
           <div className="hidden md:flex items-center space-x-8 text-xs font-bold uppercase tracking-widest text-zinc-400">
             <a href="#about" className="hover:text-white transition-colors">Chi Siamo</a>
-            <a href="#generator" className="hover:text-white transition-colors">Laboratorio</a>
             <a href="#join" className="bg-white text-black px-6 py-2 rounded-full hover:bg-blue-300 transition-all">Partecipa</a>
           </div>
         </div>
@@ -25,12 +23,10 @@ const App: React.FC = () => {
       {/* Main Content */}
       <main>
         <Hero />
-        
+
         <div id="about">
           <InfoSection />
         </div>
-
-        <ConceptGenerator />
 
         {/* Footer CTA */}
         <section id="join" className="py-32 px-4 text-center bg-gradient-to-b from-transparent to-zinc-950">
